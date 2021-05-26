@@ -1,0 +1,667 @@
+:root {
+  --cyan: #68ebca;
+  --violet: #6258ff;
+  --blue: #3c7ef3;
+  --lightDark: #133159;
+  --dark: #0f2440;
+  --red: #ff264a;
+  --light: #f6f7fb;
+  --gray: #e5e8ef;
+  --white: #ffffff;
+  --darkGray: #546376;
+}
+/**********************************************
+*************** universal css *****************
+***********************************************/
+body {
+  font-family: "Poppins", sans-serif !important;
+  background: var(--light);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 !important;
+}
+h1 {
+  font-size: 96px;
+}
+h2 {
+  font-size: 60px;
+}
+h3 {
+  font-size: 48px;
+}
+h4 {
+  font-size: 32px;
+}
+h5 {
+  font-size: 24px;
+}
+h6 {
+  font-size: 20px;
+}
+p {
+  font-size: 14px;
+}
+.subtitle-1 {
+  font-size: 16px;
+  color: #8896a8;
+}
+
+.main-section {
+  display: flex;
+}
+.main-section aside {
+  min-width: 180px;
+  width: 14%;
+  transition: 0.3s ease-in-out;
+}
+main {
+  max-width: calc(100%-180px);
+  width: 86%;
+  transition: 0.3s ease-in-out;
+}
+/**********************************************
+****************** sidebar css ****************
+***********************************************/
+.sidebar {
+  background: var(--lightDark);
+}
+.logo {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo span {
+  color: var(--white);
+  font-size: 26px;
+  margin-left: 16px;
+}
+#toggle-menu:checked ~ .sidebar {
+  min-width: 80px;
+  width: 5%;
+  transition: 0.3s ease-in-out;
+}
+#toggle-menu:checked ~ main {
+  max-width: calc(100% - 80px);
+  width: 95%;
+  transition: 0.3s ease-in-out;
+}
+#toggle-menu:checked ~ .sidebar .logo span,
+#toggle-menu:checked ~ .sidebar ul li span {
+  display: none;
+}
+#toggle-menu:checked ~ .sidebar ul li a {
+  justify-content: center;
+}
+.main-menu label {
+  display: flex;
+  margin: 25px 0 0 12px;
+  padding: 10px;
+  cursor: pointer;
+}
+#toggle-menu:checked ~ .sidebar ul label {
+  justify-content: center;
+  margin-left: 0;
+}
+.main-menu {
+  margin: 0;
+}
+.main-menu li a {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  padding: 15px 2px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+.main-menu li a div {
+  padding: 0 10px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-menu li a:hover {
+  background: var(--blue);
+}
+
+/**********************************************
+************* custom scrollbar css ************
+***********************************************/
+/* For Google Chrome */
+*::-webkit-scrollbar {
+  width: 10px;
+  background: rgba(204, 204, 204, 0.2);
+}
+*::-webkit-scrollbar-track {
+  background: rgba(60, 126, 243, 0.1);
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: var(--lightDark);
+}
+/* For Mozilla Firefox */
+.scrollItems {
+  scrollbar-color: var(--lightDark) rgba(60, 126, 243, 0.1);
+  scrollbar-width: thin;
+}
+
+/**********************************************
+***************** Top bar css *****************
+***********************************************/
+.top-nav {
+  background-color: var(--lightDark);
+  height: 80px;
+}
+.top-nav-items {
+  height: 100%;
+  max-width: 850px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+.top-nav-right {
+  display: flex;
+}
+.search-bar {
+  display: flex;
+  position: relative;
+}
+.search-field {
+  width: 285px !important;
+  height: 40px !important;
+  background: var(--gray) !important;
+  box-shadow: inset -4px -4px 2px var(--white),
+    inset 4px 4px 2px rgba(8, 20, 36, 0.1) !important;
+  border-radius: 10px !important;
+  border: 0 !important;
+  padding-left: 15px !important;
+  margin: 0 !important;
+  font-family: "Poppins", sans-serif;
+}
+.search-field::placeholder {
+  color: #8e98a6;
+}
+.search-bar button {
+  height: 40px !important;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  color: #133159;
+}
+.icon-btn {
+  background: var(--blue);
+}
+.question-btn img {
+  margin-top: 10px;
+}
+.icon-btn:hover,
+.icon-btn:active,
+.icon-btn:focus {
+  background: var(--cyan);
+}
+.top-nav-icons button {
+  margin: 0 8px;
+}
+.notification-btn {
+  position: relative;
+}
+.notification-btn span {
+  position: absolute;
+  background: var(--red);
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  top: 5px;
+  right: 5px;
+  height: 15px;
+  width: 15px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.admin-options h5 {
+  font-size: 18px;
+}
+.admin-options p {
+  color: #e8e8e8;
+}
+.admin-info {
+  margin: 0 12px;
+}
+
+/**********************************************
+**************** Deal top css ****************
+***********************************************/
+.main-content {
+  padding: 20px;
+  margin: 20px 10px 10px 50px;
+  background: var(--white);
+  border-radius: 10px;
+}
+.deal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.deal-items {
+  display: flex;
+}
+.deal-item {
+  margin: 0 10px;
+}
+.square-btn {
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  padding: 0;
+  background: var(--light);
+  color: var(--darkGray);
+  box-shadow: none;
+}
+.square-btn:hover,
+.square-btn:active,
+.square-btn:focus {
+  background: var(--lightDark);
+  color: var(--white);
+}
+.rectangle-btn {
+  background: var(--blue);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 9px;
+}
+.rectangle-btn:hover,
+.rectangle-btn:focus,
+.rectangle-btn:active {
+  background: var(--cyan);
+}
+.rectangle-btn-icon {
+  color: var(--blue);
+  background: var(--white);
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+.rectangle-btn:hover .rectangle-btn-icon,
+.rectangle-btn:focus .rectangle-btn-icon {
+  color: var(--cyan) !important;
+}
+.visibility-btn {
+  border: 1px solid var(--darkGray) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.visibility-btn i {
+  color: var(--darkGray);
+}
+/**********************************************
+************* Selection part css **************
+***********************************************/
+.selection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+  padding: 20px 0;
+  margin-top: 20px;
+}
+.select-items {
+  display: inline-flex;
+  align-items: center;
+  max-width: 540px;
+  flex: 1;
+  margin-right: 20px;
+}
+.selling-options {
+  width: 60%;
+}
+.status-options {
+  width: 25%;
+}
+#date-picker {
+  position: relative;
+}
+#date-picker input {
+  max-width: 72px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 1px solid var(--darkGray);
+  color: var(--darkGray);
+  border-radius: 6px;
+  outline: 0;
+  margin: 0;
+  height: 38px;
+  transform: rotateX(180deg) rotateZ(180deg);
+}
+#date-picker i {
+  position: absolute;
+  right: 0;
+  top: 8px;
+}
+.select-items select {
+  display: inline-block;
+  border: 1px solid var(--darkGray);
+  color: var(--darkGray);
+  border-radius: 6px;
+  outline: 0;
+  margin-right: 20px;
+  font-family: "poppins", sans-serif;
+  height: 40px;
+  cursor: pointer;
+}
+.deal-search .search-field {
+  box-shadow: none !important;
+  border-radius: 20px !important;
+  background: var(--white) !important;
+  border: 1px solid var(--darkGray) !important;
+}
+.deal-search button {
+  right: 5px !important;
+  top: 2px !important;
+}
+/**********************************************
+************ Counter css **************
+***********************************************/
+.counter p {
+  font-size: 16px;
+  color: #333333;
+  padding: 20px 0;
+}
+/**********************************************
+************ deal stage part css **************
+***********************************************/
+.deal-stages {
+  overflow-x: auto;
+  background: var(--light);
+  padding: 20px 20px 0 20px;
+}
+.deal-stage-header {
+  display: inline-flex;
+  white-space: nowrap;
+}
+.stage-header-item:first-child {
+  border-radius: 10px 0 0 10px;
+}
+.stage-header-item:last-child {
+  border-radius: 0 10px 10px 0;
+  overflow: hidden;
+}
+.stage-header-item {
+  display: inline-flex;
+  width: 381px;
+  background: #e3ebfa;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 20px 30px;
+  position: relative;
+}
+.stage-header-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 3px;
+  border-top: 47px solid transparent;
+  border-left: 20px solid #e3ebfa;
+  border-bottom: 47px solid transparent;
+  box-shadow: 3px 0px 0px 0px var(--white);
+  height: 100%;
+  background: var(--white);
+}
+.stage-header-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 47px solid #e3ebfa;
+  border-left: 20px solid transparent;
+  border-bottom: 47px solid #e3ebfa;
+  border-right: 0px solid #e3ebfa;
+  height: 100%;
+}
+.stage-header-item h6 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+}
+.stage-header-item p span {
+  color: #133159;
+}
+.dot-circle {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  margin: 0 17px;
+  background: #c4c4c4;
+  display: inline-block;
+}
+.deal-stage-items {
+  display: inline-flex;
+}
+.deal-stage-item {
+  display: inline-block;
+  border: 1px solid #e7eaf1;
+  width: 375px;
+  padding: 10px 10px 0 10px;
+  border-radius: 10px;
+  margin: 20px 8px 10px 0;
+  overflow-y: auto;
+  max-height: 622px;
+}
+.single-deal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 24px 20px 19px 20px;
+  border-radius: 10px;
+  background: var(--white);
+  margin-bottom: 10px;
+}
+.single-deal h6 {
+  font-size: 16px;
+}
+.single-deal h6 span {
+  color: var(--blue);
+}
+.single-deal p {
+  color: #8896a8;
+  padding: 12px 0 18px 0;
+}
+.single-deal > button {
+  background: var(--lightDark);
+}
+.single-deal > button:hover,
+.single-deal > button:focus {
+  background: var(--cyan);
+}
+.single-deal-icons button {
+  border: 1px solid var(--gray);
+  box-shadow: none;
+  margin-right: 4px;
+}
+.single-deal-icons button i {
+  color: var(--darkGray);
+  margin: -1px 0 0 -1px;
+}
+
+/**********************************************
+*************** Empty deal css ****************
+***********************************************/
+.empty-deal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.empty-deal h6 {
+  color: var(--darkGray);
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.empty-deal h6 i {
+  background: var(--blue);
+  height: 26px;
+  width: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 18px;
+}
+/**********************************************
+*********** Bottom button part css ************
+***********************************************/
+.bottom-btn-section {
+  display: flex;
+  padding: 20px;
+  background: var(--light);
+  border-radius: 0 0 10px 10px;
+}
+.bottom-btn-section button {
+  margin-right: 20px;
+  flex: 1;
+  border: 1px solid;
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.bottom-btn-section button:last-child {
+  margin-right: 0;
+}
+.bottom-btn-section button i {
+  margin-right: 10px;
+}
+.bottom-btn-section .red-btn {
+  color: #ff5858;
+}
+.bottom-btn-section .red-btn:hover,
+.bottom-btn-section .red-btn:focus {
+  background: #ff5858;
+  color: var(--white);
+}
+.bottom-btn-section .green-btn {
+  color: #6fcf97;
+}
+.bottom-btn-section .green-btn:hover,
+.bottom-btn-section .green-btn:focus {
+  background: #6fcf97;
+  color: var(--white);
+}
+.bottom-btn-section .orange-btn {
+  color: #ffb053;
+}
+.bottom-btn-section .orange-btn:hover,
+.bottom-btn-section .orange-btn:focus {
+  background: #ffb053;
+  color: var(--white);
+}
+
+/**********************************************
+************* Responsive part css *************
+***********************************************/
+@media (max-width: 730px) {
+  .top-nav-items {
+    flex-direction: column-reverse;
+  }
+  .top-nav {
+    height: 120px;
+  }
+}
+@media (max-width: 801px) {
+  .deal-items {
+    flex-direction: column;
+    height: 190px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .deal {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 870px) {
+  .selection {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .select-items {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  .status-options {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .main-content {
+    margin: 5px;
+  }
+  #toggle-menu ~ .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding-bottom: 50px;
+  }
+  #toggle-menu ~ main {
+    width: 100%;
+  }
+  #toggle-menu:checked ~ .sidebar {
+    position: static;
+  }
+  #toggle-menu:checked ~ main {
+    max-width: calc(100% - 80px);
+    width: 95%;
+  }
+  .bottom-btn-section {
+    flex-direction: column;
+  }
+  .bottom-btn-section button {
+    margin: 10px 0;
+  }
+}

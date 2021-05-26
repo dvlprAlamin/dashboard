@@ -1,0 +1,1788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import Poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pypepro Dashboard</title>
+</head>
+
+<body>
+    <div class="main-section">
+        <input type="checkbox" checked id="toggle-menu">
+        <!-- sidebar part -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+                <span>Pypepro</span>
+            </div>
+            <ul class="main-menu">
+                <li>
+                    <a href="#" class="waves-effect">
+                        <div>
+                            <img src="./img/home.png" alt="">
+                        </div>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect">
+                        <div>
+                            <img src="./img/inbox.png" alt="">
+                        </div>
+                        <span>Inbox</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect">
+                        <div>
+                            <img src="./img/deals.png" alt="">
+                        </div>
+                        <span>Deal</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect">
+                        <div>
+                            <img src="./img/calendar.png" alt="">
+                        </div>
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect">
+                        <div>
+                            <img src="./img/contacts.png" alt="">
+                        </div>
+                        <span>Contacts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect">
+                        <div>
+                            <img src="./img/marketing.png" alt="">
+                        </div>
+                        <span>Marketing</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect">
+                        <div>
+                            <img src="./img/find.png" alt="">
+                        </div>
+                        <span>Find New Leads</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect">
+                        <div>
+                            <img src="./img/triggers.png" alt="">
+                        </div>
+                        <span>Triggers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect">
+                        <div>
+                            <img src="./img/reporting.png" alt="">
+                        </div>
+                        <span>Reporting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect">
+                        <div>
+                            <img src="./img/settings.png" alt="">
+                        </div>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect">
+                        <div>
+                            <img src="./img/training.png" alt="">
+                        </div>
+                        <span>Training</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect">
+                        <div>
+                            <img src="./img/accounts.png" alt="">
+                        </div>
+                        <span>Accounts</span>
+                    </a>
+                </li>
+                <li>
+                    <label for="toggle-menu" class="waves-effect">
+                        <img src="./img/toggle-menu.png" alt="">
+                    </label>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <!-- top bar part -->
+            <section class="top-nav">
+                <div class="top-nav-items">
+                    <div class="search-bar">
+                        <input class="search-field" type="text" name="search" placeholder="Search">
+                        <button class="waves-effect waves-light">
+                            <i class="material-icons">search</i>
+                        </button>
+                    </div>
+                    <div class="top-nav-right">
+                        <div class="top-nav-icons">
+                            <button class="btn-floating waves-effect icon-btn">
+                                <i class="material-icons">call</i>
+                            </button>
+                            <button class="btn-floating waves-effect icon-btn">
+                                <i class="material-icons">add</i>
+                            </button>
+                            <button class="btn-floating waves-effect icon-btn notification-btn">
+                                <i class="material-icons">
+                                    notifications_none
+                                </i>
+                                <span>9</span>
+                            </button>
+                            <button class="btn-floating waves-effect question-btn icon-btn">
+                                <img src="./img/question.png" alt="">
+                            </button>
+                        </div>
+                        <div class="admin-options">
+                            <img src="./img/person.png" alt="">
+                            <div class="admin-info hide-on-med-and-down">
+                                <h5 class="white-text">Admin</h5>
+                                <p>admi@email.com</p>
+                            </div>
+                            <i class="material-icons white-text hide-on-med-and-down">
+                                expand_more
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="main-content">
+                <section class="deal">
+                    <h5>Deal</h5>
+                    <div class="deal-items">
+                        <div class="deal-item">
+                            <button class="btn square-btn waves-effect waves-light">
+                                <i class="material-icons">
+                                    format_list_bulleted
+                                </i>
+                            </button>
+                            <button class="btn square-btn waves-effect waves-light">
+                                <i class="material-icons">
+                                    date_range
+                                </i>
+                            </button>
+                            <button class="btn square-btn waves-effect waves-light">
+                                <i class="material-icons">
+                                    grid_view
+                                </i>
+                            </button>
+                            <button class="btn square-btn increase waves-effect waves-light">
+                                <i class="material-icons">
+                                    trending_up
+                                </i>
+                            </button>
+                        </div>
+                        <button class="rectangle-btn btn  waves-effect deal-item">
+                            <i class="material-icons rectangle-btn-icon">
+                                add
+                            </i>
+                            Create List
+                        </button>
+                        <button class="rectangle-btn  waves-effect btn deal-item">
+                            <i class="material-icons rectangle-btn-icon">
+                                settings
+                            </i>
+                            Settings
+                        </button>
+                        <button class="btn-floating visibility-btn waves-effect white deal-item">
+                            <i class="material-icons">
+                                visibility_off
+                            </i>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- select field section -->
+                <div class="selection">
+                    <div class="select-items">
+                        <select class="selling-options">
+                            <option value="vehicle">Vehicle Sell</option>
+                            <option value="truck">Truck Sell</option>
+                            <option value="lorry">Lorry Sell</option>
+                        </select>
+                        <select class="status-options">
+                            <option value="active">Active</option>
+                            <option value="inactive">Inactive</option>
+                        </select>
+                        <div id="date-picker">
+                            <input type="date" id="calendar">
+                            <i class="material-icons">
+                                expand_more
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="search-bar deal-search">
+                        <input type="text" class="search-field" placeholder="Search">
+                        <button class="waves-effect waves-light">
+                            <i class="material-icons">search</i>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="counter">
+                    <p>Total Pipeline Value: $20K | Total Open Deals: $20K | Total Won: $0 | Total Lost: $0</p>
+                </div>
+
+                <!-- deal stage section -->
+                <section class="deal-stages scrollItems">
+                    <div class="deal-stage-header">
+                        <div class="stage-header-item">
+                            <div>
+                                <h6>John Do</h6>
+                                <p class="subtitle-1">1 deal <span class="dot-circle"></span>
+                                    <span>$1.2K</span>
+                                </p>
+                            </div>
+                            <button class="btn-floating icon-btn waves-effect pulse">
+                                <i class="material-icons">
+                                    add
+                                </i>
+                            </button>
+                        </div>
+                        <div class="stage-header-item ">
+                            <div>
+                                <h6>John Do</h6>
+                                <p class="subtitle-1">1 deal <span class="dot-circle"></span>
+                                    <span>$1.2K</span>
+                                </p>
+                            </div>
+                            <button class="btn-floating icon-btn waves-effect pulse">
+                                <i class="material-icons">
+                                    add
+                                </i>
+                            </button>
+                        </div>
+                        <div class="stage-header-item ">
+                            <div>
+                                <h6>John Do</h6>
+                                <p class="subtitle-1">1 deal <span class="dot-circle"></span>
+                                    <span>$1.2K</span>
+                                </p>
+                            </div>
+                            <button class="btn-floating icon-btn waves-effect pulse">
+                                <i class="material-icons">
+                                    add
+                                </i>
+                            </button>
+                        </div>
+                        <div class="stage-header-item ">
+                            <div>
+                                <h6>John Do</h6>
+                                <p class="subtitle-1">1 deal <span class="dot-circle"></span>
+                                    <span>$1.2K</span>
+                                </p>
+                            </div>
+                            <button class="btn-floating icon-btn waves-effect pulse">
+                                <i class="material-icons">
+                                    add
+                                </i>
+                            </button>
+                        </div>
+                        <div class="stage-header-item ">
+                            <div>
+                                <h6>John Do</h6>
+                                <p class="subtitle-1">1 deal <span class="dot-circle"></span>
+                                    <span>$1.2K</span>
+                                </p>
+                            </div>
+                            <button class="btn-floating icon-btn waves-effect pulse">
+                                <i class="material-icons">
+                                    add
+                                </i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="deal-stage-items">
+                        <div class="deal-stage-item scrollItems">
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- empty stage part start-->
+                        <div class="deal-stage-item scrollItems">
+                            <div class="empty-deal">
+                                <div>
+                                    <p class="subtitle-1">
+                                        No Deal in This Stage
+                                    </p>
+                                    <h6>
+                                        <i class="material-icons waves-effect pulse white-text circle">
+                                            add
+                                        </i>
+                                        Add Deal
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- empty stage part end-->
+
+                        <div class="deal-stage-item scrollItems">
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="deal-stage-item scrollItems">
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="deal-stage-item scrollItems">
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="single-deal">
+                                <div>
+                                    <h6>John Do <span> ($1.2k)</span></h6>
+                                    <p>Time in Stage : 1 Week Ago</p>
+                                    <div class="single-deal-icons">
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                person
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                sms
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                phone
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mic
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                mail
+                                            </i>
+                                        </button>
+                                        <button class="btn-floating btn-small waves-effect white">
+                                            <i class="material-icons">
+                                                rate_review
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button class="btn-floating btn-small waves-effect">
+                                    <i class="material-icons white-text">
+                                        arrow_forward_ios
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- bottom button section -->
+                <div class="bottom-btn-section">
+                    <button class="col l3 waves-effect red-btn">
+                        <i class="material-icons">
+                            delete
+                        </i>
+                        Delete
+                    </button>
+                    <button class="col l3 waves-effect green-btn">
+                        <i class="material-icons">
+                            pan_tool
+                        </i>
+                        Win
+                    </button>
+                    <button class="col l3 waves-effect red-btn">
+                        <i class="material-icons">
+                            thumb_down
+                        </i>
+                        Lost
+                    </button>
+                    <button class="col l3 waves-effect orange-btn">
+                        Pipeline
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
